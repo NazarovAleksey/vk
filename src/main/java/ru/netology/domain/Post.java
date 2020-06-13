@@ -2,14 +2,29 @@ package ru.netology.domain;
 
 public class Post {
     private int postId;
-    private int postTimestamp;
     private int groupId;
-    private GroupInfo groupInfo;
+    private int autorId;
+    private int autorCreated;
+    private int postTimestamp;
     private String postText;
-    private LikesInfo likesInfo;
+    private int replyOwnerId;
+    private int replyPostId;
+    private int friendsOnly;
     private CommentsInfo commentsInfo;
+    private String copyright;
+    private LikesInfo likesInfo;
     private RepostInfo repostInfo;
     private ViewsInfo viewsInfo;
+    private String postType;
+    private GeoInfo geoInfo;
+    private int signerId;
+    private int canPin;
+    private int canDelete;
+    private int canEdit;
+    private int isPinned;
+    private int markedAsAds;
+    private boolean isFavorite;
+    private int postponedId;
 
     public int getPostId() {
         return postId;
@@ -17,14 +32,6 @@ public class Post {
 
     public void setPostId(int postId) {
         this.postId = postId;
-    }
-
-    public int getPostTimestamp() {
-        return postTimestamp;
-    }
-
-    public void setPostTimestamp(int postTimestamp) {
-        this.postTimestamp = postTimestamp;
     }
 
     public int getGroupId() {
@@ -35,12 +42,28 @@ public class Post {
         this.groupId = groupId;
     }
 
-    public GroupInfo getGroupInfo() {
-        return groupInfo;
+    public int getAutorId() {
+        return autorId;
     }
 
-    public void setGroupInfo(GroupInfo groupInfo) {
-        this.groupInfo = groupInfo;
+    public void setAutorId(int autorId) {
+        this.autorId = autorId;
+    }
+
+    public int getAutorCreated() {
+        return autorCreated;
+    }
+
+    public void setAutorCreated(int autorCreated) {
+        this.autorCreated = autorCreated;
+    }
+
+    public int getPostTimestamp() {
+        return postTimestamp;
+    }
+
+    public void setPostTimestamp(int postTimestamp) {
+        this.postTimestamp = postTimestamp;
     }
 
     public String getPostText() {
@@ -51,12 +74,28 @@ public class Post {
         this.postText = postText;
     }
 
-    public LikesInfo getLikesInfo() {
-        return likesInfo;
+    public int getReplyOwnerId() {
+        return replyOwnerId;
     }
 
-    public void setLikesInfo(LikesInfo likesInfo) {
-        this.likesInfo = likesInfo;
+    public void setReplyOwnerId(int replyOwnerId) {
+        this.replyOwnerId = replyOwnerId;
+    }
+
+    public int getReplyPostId() {
+        return replyPostId;
+    }
+
+    public void setReplyPostId(int replyPostId) {
+        this.replyPostId = replyPostId;
+    }
+
+    public int getFriendsOnly() {
+        return friendsOnly;
+    }
+
+    public void setFriendsOnly(int friendsOnly) {
+        this.friendsOnly = friendsOnly;
     }
 
     public CommentsInfo getCommentsInfo() {
@@ -65,6 +104,22 @@ public class Post {
 
     public void setCommentsInfo(CommentsInfo commentsInfo) {
         this.commentsInfo = commentsInfo;
+    }
+
+    public String getCopyright() {
+        return copyright;
+    }
+
+    public void setCopyright(String copyright) {
+        this.copyright = copyright;
+    }
+
+    public LikesInfo getLikesInfo() {
+        return likesInfo;
+    }
+
+    public void setLikesInfo(LikesInfo likesInfo) {
+        this.likesInfo = likesInfo;
     }
 
     public RepostInfo getRepostInfo() {
@@ -81,5 +136,85 @@ public class Post {
 
     public void setViewsInfo(ViewsInfo viewsInfo) {
         this.viewsInfo = viewsInfo;
+    }
+
+    public String getPostType() {
+        return postType;
+    }
+
+    public void setPostType(String postType) {
+        this.postType = postType;
+    }
+
+    public GeoInfo getGeoInfo() {
+        return geoInfo;
+    }
+
+    public void setGeoInfo(GeoInfo geoInfo) {
+        this.geoInfo = geoInfo;
+    }
+
+    public int getSignerId() {
+        return signerId;
+    }
+
+    public void setSignerId(int signerId) {
+        this.signerId = signerId;
+    }
+
+    public int getCanPin() {
+        return canPin;
+    }
+
+    public void setCanPin(int canPin) {
+        this.canPin = canPin;
+    }
+
+    public int getCanDelete() {
+        return canDelete;
+    }
+
+    public void setCanDelete(int canDelete) {
+        this.canDelete = canDelete;
+    }
+
+    public int getCanEdit() {
+        return canEdit;
+    }
+
+    public void setCanEdit(int canEdit) {
+        this.canEdit = canEdit;
+    }
+
+    public int getIsPinned() {
+        return isPinned;
+    }
+
+    public void setIsPinned(int isPinned) {
+        this.isPinned = isPinned;
+    }
+
+    public int getMarkedAsAds() {
+        return markedAsAds;
+    }
+
+    public void setMarkedAsAds(int markedAsAds) {
+        this.markedAsAds = markedAsAds;
+    }
+
+    public boolean isFavorite() {
+        return isFavorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        isFavorite = favorite;
+    }
+
+    public int getPostponedId() {
+        return postponedId;
+    }
+
+    public void setPostponedId(int postponedId) {
+        this.postponedId = postponedId;
     }
 }
