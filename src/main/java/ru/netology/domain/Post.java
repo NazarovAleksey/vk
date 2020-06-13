@@ -2,11 +2,11 @@ package ru.netology.domain;
 
 public class Post {
     private int postId;
-    private int groupId;
-    private int autorId;
-    private int autorCreated;
-    private int postTimestamp;
-    private String postText;
+    private int ownerId;
+    private int fromId;
+    private int createdBy;
+    private int date;
+    private String text;
     private int replyOwnerId;
     private int replyPostId;
     private int friendsOnly;
@@ -32,46 +32,6 @@ public class Post {
 
     public void setPostId(int postId) {
         this.postId = postId;
-    }
-
-    public int getGroupId() {
-        return groupId;
-    }
-
-    public void setGroupId(int groupId) {
-        this.groupId = groupId;
-    }
-
-    public int getAutorId() {
-        return autorId;
-    }
-
-    public void setAutorId(int autorId) {
-        this.autorId = autorId;
-    }
-
-    public int getAutorCreated() {
-        return autorCreated;
-    }
-
-    public void setAutorCreated(int autorCreated) {
-        this.autorCreated = autorCreated;
-    }
-
-    public int getPostTimestamp() {
-        return postTimestamp;
-    }
-
-    public void setPostTimestamp(int postTimestamp) {
-        this.postTimestamp = postTimestamp;
-    }
-
-    public String getPostText() {
-        return postText;
-    }
-
-    public void setPostText(String postText) {
-        this.postText = postText;
     }
 
     public int getReplyOwnerId() {
@@ -216,5 +176,45 @@ public class Post {
 
     public void setPostponedId(int postponedId) {
         this.postponedId = postponedId;
+    }
+
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
+    }
+
+    public int getFromId() {
+        return fromId;
+    }
+
+    public void setFromId(int fromId) {
+        this.fromId = fromId;
+    }
+
+    public int getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(int createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    public int getDate() {
+        return date;
+    }
+
+    public void setDate(int date) {
+        this.date = date;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }
