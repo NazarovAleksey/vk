@@ -2,7 +2,7 @@ package ru.netology.domain;
 
 public class LikesInfo {
     private boolean userLike;
-    private int Count;
+    private int сount;
     private boolean canLike;
     private boolean canPublish;
 
@@ -15,11 +15,11 @@ public class LikesInfo {
     }
 
     public int getCount() {
-        return Count;
+        return сount;
     }
 
     public void setCount(int count) {
-        Count = count;
+        сount = count;
     }
 
     public boolean isCanLike() {

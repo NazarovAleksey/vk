@@ -1,18 +1,18 @@
 package ru.netology.domain;
 
 public class CommentsInfo {
-    private int Count;
+    private int сount;
     private boolean canPost;
     private boolean groupsCanPost;
     private boolean canClose;
     private boolean canOpen;
 
     public int getCount() {
-        return Count;
+        return сount;
     }
 
     public void setCount(int count) {
-        Count = count;
+        сount = count;
     }
 
     public boolean isCanPost() {

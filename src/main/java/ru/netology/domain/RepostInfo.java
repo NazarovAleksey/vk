@@ -1,7 +1,7 @@
 package ru.netology.domain;
 
 public class RepostInfo {
-    private int Count;
+    private int сount;
     private boolean userReposted;
 
     public boolean isUserReposted() {
@@ -13,10 +13,10 @@ public class RepostInfo {
     }
 
     public int getCount() {
-        return Count;
+        return сount;
     }
 
     public void setCount(int count) {
-        Count = count;
+        сount = count;
     }
 }

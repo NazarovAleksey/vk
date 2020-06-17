@@ -1,13 +1,13 @@
 package ru.netology.domain;
 
 public class ViewsInfo {
-    private int Count;
+    private int сount;
 
     public int getCount() {
-        return Count;
+        return сount;
     }
 
     public void setCount(int count) {
-        Count = count;
+        сount = count;
     }
 }
